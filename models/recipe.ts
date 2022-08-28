@@ -4,12 +4,12 @@ import Ingredient from './ingredient'
 // import { Config } from '@vuex-orm/plugin-axios'
 
 export enum Category {
-  CATEGORY_UNSPECIFIED,
-  CATEGORY_MEAT,
-  CATEGORY_SEAFOOD,
-  CATEGORY_VEGETARIAN,
-  CATEGORY_VEGAN,
-  CATEGORY_SWEETS,
+  CATEGORY_MEAT = 'Meat',
+  CATEGORY_SEAFOOD = 'Seafood',
+  CATEGORY_VEGETARIAN = 'Vegetarian',
+  CATEGORY_VEGAN = 'Vegan',
+  CATEGORY_SWEETS = 'Sweets',
+  CATEGORY_OTHER = 'Other'
 }
 
 export interface Step {
