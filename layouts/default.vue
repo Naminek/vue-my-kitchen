@@ -2,7 +2,6 @@
   <v-app light>
     <v-main>
       <AppBar />
-      <RecipeForm />
       <v-container>
         <Nuxt />
       </v-container>
@@ -19,13 +18,11 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import AppBar from '~/components/AppBar/'
-import RecipeForm from '~/components/RecipeForm'
 
 export default defineComponent({
   name: 'DefaultLayout',
   components: {
-    AppBar,
-    RecipeForm
+    AppBar
   }
 })
 </script>
