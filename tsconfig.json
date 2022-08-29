@@ -29,6 +29,7 @@
       "@nuxtjs/i18n",
       "@types/lodash-es",
       "@types/validator",
+      "jest",
     ]
   },
   "vueCompilerOptions": {
