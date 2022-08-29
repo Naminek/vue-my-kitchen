@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center" class="pt-5 fill-height">
+  <v-row justify="center" align="center" class="pt-y background-img">
     <v-col cols="12" sm="8" md="6">
       <v-card>
         <v-card-title class="headline">
@@ -30,9 +30,9 @@ export default {
 </script>
 
 <style>
-  .center-fix {
-    position: absolute;
-    top: 50%;
-    right: 50%;
+  .background-img {
+    background: url('~/assets/main.jpg') no-repeat center center !important;
+    background-size: 100% auto !important;
+    min-height: 400px;
   }
 </style>

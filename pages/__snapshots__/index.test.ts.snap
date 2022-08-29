@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard page should match its snapshot 1`] = `
+<v-row-stub align="center" class="pt-y background-img" justify="center" tag="div">
+  <v-col-stub cols="12" md="6" sm="8" tag="div">
+    <v-card-stub loaderheight="4" tag="div">
+      <v-card-title-stub class="headline" tag="div">
+        Welcome to Namine's Kitchen!
+      </v-card-title-stub>
+      <v-card-text-stub tag="div">
+        <p>You can check nice Japanese recipes based on categories, ingredients, and daily logs</p>
+      </v-card-text-stub>
+      <v-card-actions-stub tag="div">
+        <v-spacer-stub tag="div"></v-spacer-stub>
+        <v-btn-stub activeclass color="primary" nuxt="true" tag="button" to="/inspire" type="button">
+          Explore
+        </v-btn-stub>
+      </v-card-actions-stub>
+    </v-card-stub>
+  </v-col-stub>
+</v-row-stub>
+`;

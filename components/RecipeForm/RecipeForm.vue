@@ -24,6 +24,24 @@
             data-cy="title"
           />
         </v-col>
+        <v-col cols="12" md="4">
+        <v-file-input
+          label="image"
+          outlined
+          :prepend-icon="mdiCamera"
+        />
+        <div class="img-area">
+          <v-img v-if="localValue.img_url"
+            :src="require(localValue.img_url)"
+            height="40"
+            width="200"
+            contain
+          />
+          <p v-else class="text-center font-italic">No image is selected</p>
+        </div>
+        </v-col>
+        <v-col cols="12" md="8">
+        </v-col>
         <v-col cols="12">
           <v-select
             v-model="localValue.categories"
@@ -50,6 +68,7 @@ import { cloneDeep } from 'lodash-es'
 import isEmpty from 'validator/es/lib/isEmpty'
 import { usePropWatch } from '~/composables/props'
 import Recipe, { Category } from '~/models/recipe'
+import { mdiCamera } from '@mdi/js'
 
 interface Validatable {
   validate: () => boolean
@@ -92,6 +111,7 @@ export default defineComponent({
     }
 
     return {
+      mdiCamera,
       localValue,
       validates,
       titleDuplicated,
@@ -102,3 +122,30 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+  .img-area {
+    border: dotted 2px rgb(66, 66, 66);
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+  }
+  .img-area v-img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      max-width: 100%;
+      max-height: 100%;
+      transform: translate(0, -50%)
+    }
+    /* .no-img-message {
+      font-size: smaller;
+      font-style: italic;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    } */
+</style>
