@@ -2,23 +2,10 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Vuetify from 'vuetify'
 import { Plugin } from 'vue-fragment'
-import { config } from '@vue/test-utils'
 
 Vue.use(Vuetify)
 Vue.use(Vuex)
 Vue.use(Plugin)
-
-config.mocks = {
-  $i18n: {
-    t: (key: string) => key,
-    locale: 'en'
-  },
-  $t: (key: string) => key,
-  localePath: (v: string) => v,
-  $nuxt: {
-    nbFetching: 0
-  }
-}
 
 // Necessary for components such as v-dialog and v-menu to function correctly
 const app = document.createElement('div')
