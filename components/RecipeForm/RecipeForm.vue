@@ -24,23 +24,24 @@
             data-cy="title"
           />
         </v-col>
-        <v-col cols="12" md="4">
-        <v-file-input
-          label="image"
-          outlined
-          :prepend-icon="mdiCamera"
-        />
-        <div class="img-area">
-          <img v-if="localValue.img_url"
-            :src="localValue.img_url"
-            height="40"
-            width="200"
-            contain
+        <v-col cols="12" sm="5" md="4">
+          <v-file-input
+            label="image"
+            outlined
+            :prepend-icon="mdiCamera"
+            @change="onFileChange($event)"
           />
-          <p v-else class="text-center font-italic">No image is selected</p>
-        </div>
+          <div class="img-area d-flex justify-center align-center">
+            <v-img v-if="tempImgUrl"
+              :src="tempImgUrl"
+              max-height="100%"
+              max-width="100%"
+              contain
+            />
+            <p v-else class="text-center font-italic">No image is selected</p>
+          </div>
         </v-col>
-        <v-col cols="12" md="8">
+        <v-col cols="12" sm="7" md="8">
         </v-col>
         <v-col cols="12">
           <v-select
@@ -76,6 +77,7 @@ export default defineComponent({
   setup (props, { emit }) {
     const propWatch = usePropWatch(props)
     const localValue = propWatch('recipe')
+    const tempImgUrl = ref(localValue.value.img_url)
 
     const titleDuplicated = ref(false) // TODO: Implement a function to check if the same name exists
 
@@ -88,6 +90,15 @@ export default defineComponent({
       ]
     }
 
+    const onFileChange = (file: File) => {
+      console.log(file)
+      if (!!file) {
+        tempImgUrl.value = URL.createObjectURL(file)
+      } else {
+        tempImgUrl.value = undefined
+      }
+    }
+
     const categoryItems = Object.values(Category)
 
     return {
@@ -95,7 +106,9 @@ export default defineComponent({
       localValue,
       titleDuplicated,
       validation,
-      categoryItems
+      categoryItems,
+      tempImgUrl,
+      onFileChange
     }
   }
 })
@@ -103,27 +116,11 @@ export default defineComponent({
 
 <style>
   .img-area {
-    border: dotted 2px rgb(66, 66, 66);
+    border: dotted 2px grey;
+    border-radius: 5px;
     position: relative;
     width: 100%;
     height: 300px;
     text-align: center;
   }
-  .img-area v-img {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      max-width: 100%;
-      max-height: 100%;
-      transform: translate(0, -50%)
-    }
-    /* .no-img-message {
-      font-size: smaller;
-      font-style: italic;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-    } */
 </style>

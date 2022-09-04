@@ -3,7 +3,7 @@
 exports[`EditRecipeDialog should match its snapshot 1`] = `
 <v-dialog-stub closedelay="0" contentclass maxwidth="1000px" opendelay="0" openonclick="true" origin="center center" persistent="true" retainfocus="true" scrollable="true" transition="dialog-transition" value="true">
   <v-card-stub loaderheight="4" tag="div">
-    <v-card-title-stub class="lime lighten-3 white--text font-weight-light text-subtitle-1 text-sm-h6" tag="div">
+    <v-card-title-stub class="blue-grey lighten-2 white--text font-weight-light text-subtitle-1 text-sm-h6" tag="div">
       Add recipe
       <v-spacer-stub tag="div"></v-spacer-stub>
       <v-btn-stub activeclass class="white--text ml-2" icon="true" tag="button" type="button">

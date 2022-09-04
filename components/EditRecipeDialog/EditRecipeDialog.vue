@@ -7,7 +7,7 @@
     @input="close"
   >
     <v-card>
-      <v-card-title class="lime lighten-3 white--text font-weight-light text-subtitle-1 text-sm-h6">
+      <v-card-title class="blue-grey lighten-2 white--text font-weight-light text-subtitle-1 text-sm-h6">
         Add recipe
         <v-spacer />
         <v-btn
