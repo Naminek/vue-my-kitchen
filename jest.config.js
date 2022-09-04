@@ -8,7 +8,8 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
-    '^vue$': 'vue/dist/vue.common.js'
+    '^vue$': 'vue/dist/vue.common.js',
+    '^.+.(css|styl|less|sass|scss|png|jpg|webp|svg|ttf|woff|woff2)$': 'jest-transform-stub'
   },
   moduleFileExtensions: [
     'ts',
@@ -17,9 +18,9 @@ module.exports = {
     'json'
   ],
   transform: {
-    '^.+\\.ts$': 'ts-jest',
-    '^.+\\.js$': 'babel-jest',
-    '.*\\.(vue)$': 'vue-jest'
+    '^.+\\.[jt]s$': 'babel-jest',
+    '.*\\.(vue)$': 'vue-jest',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|webp|svg|ttf|woff|woff2)$': 'jest-transform-stub'
   },
   collectCoverage: true,
   collectCoverageFrom: [
@@ -36,26 +37,11 @@ module.exports = {
   snapshotSerializers: [
     '<rootDir>/node_modules/jest-serializer-vue-tjw'
   ],
-  transformIgnorePatterns: [`node_modules/(?!${esModules})`]
+  transformIgnorePatterns: [`node_modules/(?!${esModules})`],
+  globals: {
+    'ts-jest': {
+      isolatedModules: true
+    }
+  }
 }
 
-// const esModules = [
-//   'vuex-composition-helpers',
-//   'validator/es/lib/',
-//   'lodash-es',
-// ].join('|')
-
-// module.exports = {
-//   testEnvironment: 'jsdom',
-//   moduleNameMapper: {
-//     '^~/(.*)$': '<rootDir>/$1',
-//     '^.+.(css|styl|less|sass|scss|png|jpg|webp|svg|ttf|woff|woff2)$': 'jest-transform-stub'
-//   },
-//   transformIgnorePatterns: [`node_modules/(?!${esModules})`],
-//   modulePathIgnorePatterns: ['<rootDir>/cypress/'],
-//   globals: {
-//     'ts-jest': {
-//       isolatedModules: true
-//     }
-//   }
-// }

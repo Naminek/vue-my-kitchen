@@ -21,15 +21,16 @@
       ],
       "@/*": [
         "./*"
-      ],
+      ]
     },
     "types": [
       "@nuxt/types",
       "@types/node",
       "@types/lodash-es",
       "@types/validator",
-      "jest",
-    ]
+      "jest"
+    ],
+    "jsx": "preserve"
   },
   "vueCompilerOptions": {
     "target": 2
