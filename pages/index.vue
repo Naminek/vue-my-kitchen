@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center" class="pt-y background-img">
+  <v-row justify="center" align="center" class="mt-5 background-img">
     <v-col cols="12" sm="8" md="6">
       <v-card>
         <v-card-title class="headline">

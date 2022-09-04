@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateNewButton should match its snapshot 1`] = `
+<v-menu-stub bottom="true" closedelay="0" closeonclick="true" closeoncontentclick="true" contentclass maxheight="auto" maxwidth="auto" nudgebottom="0" nudgeleft="0" nudgeright="0" nudgetop="0" nudgewidth="0" offsety="true" opendelay="0" openonclick="true" origin="top left" transition="slide-y-transition">
+  <v-list-stub tag="div">
+    <v-list-item-stub activeclass data-cy="addRecipe" tag="div">
+      <v-list-item-icon-stub class="mr-4">
+        <v-icon-stub>
+          M12.5,1.5C10.73,1.5 9.17,2.67 8.67,4.37C8.14,4.13 7.58,4 7,4A4,4 0 0,0 3,8C3,9.82 4.24,11.41 6,11.87V19H19V11.87C20.76,11.41 22,9.82 22,8A4,4 0 0,0 18,4C17.42,4 16.86,4.13 16.33,4.37C15.83,2.67 14.27,1.5 12.5,1.5M12,10.5H13V17.5H12V10.5M9,12.5H10V17.5H9V12.5M15,12.5H16V17.5H15V12.5M6,20V21A1,1 0 0,0 7,22H18A1,1 0 0,0 19,21V20H6Z
+        </v-icon-stub>
+      </v-list-item-icon-stub>
+      <v-list-item-title-stub tag="div">
+        Recipe
+      </v-list-item-title-stub>
+    </v-list-item-stub>
+    <v-list-item-stub activeclass data-cy="daily-log" tag="div">
+      <v-list-item-icon-stub class="mr-4">
+        <v-icon-stub>
+          M3,7V5H5V4C5,2.89 5.9,2 7,2H13V9L15.5,7.5L18,9V2H19C20.05,2 21,2.95 21,4V20C21,21.05 20.05,22 19,22H7C5.95,22 5,21.05 5,20V19H3V17H5V13H3V11H5V7H3M7,11H5V13H7V11M7,7V5H5V7H7M7,19V17H5V19H7Z
+        </v-icon-stub>
+      </v-list-item-icon-stub>
+      <v-list-item-title-stub tag="div">
+        Daily log
+      </v-list-item-title-stub>
+    </v-list-item-stub>
+  </v-list-stub>
+</v-menu-stub>
+`;

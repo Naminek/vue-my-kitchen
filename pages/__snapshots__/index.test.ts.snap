@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dashboard page should match its snapshot 1`] = `
-<v-row-stub align="center" class="pt-y background-img" justify="center" tag="div">
+<v-row-stub align="center" class="mt-5 background-img" justify="center" tag="div">
   <v-col-stub cols="12" md="6" sm="8" tag="div">
     <v-card-stub loaderheight="4" tag="div">
       <v-card-title-stub class="headline" tag="div">

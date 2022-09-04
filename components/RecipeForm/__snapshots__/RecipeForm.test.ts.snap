@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeForm should match its snapshot 1`] = `
+<div>
+  <v-card-text-stub class="pt-3" tag="div">
+    <v-row-stub dense="true" tag="div">
+      <v-col-stub cols="12" tag="div">
+        <v-text-field-stub auto-grow backgroundcolor clearicon="$clear" data-cy="title" errorcount="1" errormessages label="Title" loaderheight="2" maxlength="100" messages outlined="true" rules successmessages type="text" value></v-text-field-stub>
+      </v-col-stub>
+      <v-col-stub cols="12" tag="div">
+        <v-text-field-stub auto-grow backgroundcolor clearicon="$clear" data-cy="title" errorcount="1" errormessages label="Description" loaderheight="2" maxlength="100" messages outlined="true" rules successmessages type="text" value></v-text-field-stub>
+      </v-col-stub>
+      <v-col-stub cols="12" md="4" tag="div">
+        <v-file-input-stub backgroundcolor clearable="true" clearicon="$clear" countersizestring="$vuetify.fileInput.counterSize" counterstring="$vuetify.fileInput.counter" errorcount="1" errormessages label="image" loaderheight="2" messages outlined="true" prependicon="M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z" rules successmessages truncatelength="22" type="file"></v-file-input-stub>
+        <div class="img-area">
+          <p class="text-center font-italic">No image is selected</p>
+        </div>
+      </v-col-stub>
+      <v-col-stub cols="12" md="8" tag="div"></v-col-stub>
+      <v-col-stub cols="12" tag="div">
+        <v-select-stub appendicon="$dropdown" backgroundcolor chips="true" clearicon="$clear" errorcount="1" errormessages itemcolor="primary" itemdisabled="disabled" items="Meat,Seafood,Vegetarian,Vegan,Sweets,Other" itemtext="text" itemvalue="value" label="Category" loaderheight="2" menuprops="[object Object]" messages multiple="true" nodatatext="$vuetify.noDataText" outlined="true" rules successmessages type="text" value valuecomparator="[Function]"></v-select-stub>
+      </v-col-stub>
+    </v-row-stub>
+  </v-card-text-stub>
+</div>
+`;

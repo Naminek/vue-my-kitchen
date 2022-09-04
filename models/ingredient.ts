@@ -10,6 +10,15 @@ export enum Season {
   SEASON_WINTER,
 }
 
+export enum Group {
+  GROUP_UNSPECIFIED,
+  GROUP_1,
+  GROUP_2,
+  GROUP_3,
+  GROUP_4,
+  GROUP_5,
+}
+
 export default class Ingredient extends Model {
   // This is the name used as module name of the Vuex Store.
   static entity = 'ingredients'
@@ -19,11 +28,13 @@ export default class Ingredient extends Model {
     return {
       id: this.number(0),
       name: this.attr(''),
-      season: this.number('')
+      season: this.number(''),
+      group: this.number(0)
     }
   }
 
   id!: number
   name!: string
   season?: Season
+  group?: Group
 }

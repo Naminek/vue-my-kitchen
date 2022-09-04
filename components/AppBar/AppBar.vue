@@ -2,6 +2,7 @@
   <v-toolbar
     light
     flat
+    color="blue-grey lighten-4"
   >
     <v-menu
       v-if="$vuetify.breakpoint.xsOnly"
@@ -20,7 +21,7 @@
 
       <v-list>
         <v-list-item
-          v-for="(item, i) in menus"
+          v-for="(item, i) in tabs"
           :key="i"
           nuxt
           :to="item.path"
@@ -38,9 +39,10 @@
       </nuxt-link>
     </v-toolbar-title>
     <v-spacer />
-    <v-btn icon>
-      <v-icon>mdi-magnify</v-icon>
-    </v-btn>
+    <CreateNewButton
+      @clicked-recipe="dialogs.recipe = true"
+      @clicked-daily-log="dialogs.dailyLog = true"
+    />
 
     <template v-if="$vuetify.breakpoint.smAndUp" #extension>
       <v-tabs
@@ -52,7 +54,7 @@
         <v-tabs-slider color="primary" />
 
         <v-tab
-          v-for="(item, i) in menus"
+          v-for="(item, i) in tabs"
           :key="item.label"
           :to="item.path"
           nuxt
@@ -60,53 +62,64 @@
           {{ item.label }}
         </v-tab>
       </v-tabs>
-      <!-- <v-tabs-items v-model="currentTab">
-        <v-tab-item
-          v-for="(item, i) in contexts"
-          :key="i"
-        >
-
-        </v-tab-item>
-      </v-tabs-items> -->
     </template>
+
+    <EditRecipeDialog v-model="dialogs.recipe" />
 
   </v-toolbar>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, useRouter, useRoute, watch } from '@nuxtjs/composition-api'
-import { mdiMenu } from '@mdi/js'
+import { defineComponent, ref, useRoute, watch, reactive } from '@nuxtjs/composition-api'
+import { mdiMenu, mdiPlus } from '@mdi/js'
 import { Route } from 'vue-router'
+import CreateNewButton from '~/components/CreateNewButton/'
+import EditRecipeDialog from '~/components/EditRecipeDialog'
+
 export default defineComponent({
-  name: 'AppBar',
-  setup () {
-    const router = useRouter()
-    const route = useRoute()
-    const currentTab = ref('recipes')
+  name: "AppBar",
+  components: { CreateNewButton, EditRecipeDialog },
+  setup() {
+      const route = useRoute()
+      const currentTab = ref<string>('/')
+      watch(() => route.value, (value: Route) => {
+          currentTab.value = value.path.split("/")[1]
+      });
+      const tabs = ref([
+          {
+              label: "Home",
+              path: "/"
+          },
+          {
+              label: "Recipes",
+              path: "/recipes"
+          },
+          {
+              label: "Ingredients",
+              path: "/ingredients"
+          },
+          {
+              label: "Daily Logs",
+              path: "/daily-logs"
+          }
+      ]);
+      const addMenu = ref([
+          { label: "Recipe" },
+          { label: "Daily log" }
+      ])
 
-    watch(
-      () => route.value,
-      (value: Route) => {
-        currentTab.value = value.path.split('/')[1]
+      const dialogs = reactive({
+        recipe: false,
+        dailyLog: false
+      })
+      return {
+        tabs,
+        mdiMenu,
+        mdiPlus,
+        currentTab,
+        addMenu,
+        dialogs
       }
-    )
-
-    const menus = [
-      {
-        label: 'Recipes',
-        path: '/recipes'
-      },
-      {
-        label: 'Ingredients',
-        path: '/ingredients'
-      },
-      {
-        label: 'Daily Logs',
-        path: '/daily-logs'
-      }
-    ]
-
-    return { menus, mdiMenu, currentTab }
   }
 })
 </script>

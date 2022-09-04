@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBar should match its snapshot 1`] = `
+<v-toolbar-stub color="blue-grey lighten-4" extensionheight="48" flat="true" light="true" src tag="header">
+  <v-toolbar-title-stub class="text-h5" tag="div">
+    <button>
+      Namine's Kitchen
+    </button>
+  </v-toolbar-title-stub>
+  <v-spacer-stub tag="div"></v-spacer-stub>
+  <createnewbutton-stub></createnewbutton-stub>
+  <editrecipedialog-stub recipe="[object Object]"></editrecipedialog-stub>
+</v-toolbar-stub>
+`;

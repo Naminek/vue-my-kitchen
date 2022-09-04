@@ -1,5 +1,5 @@
 <template>
-  <v-form ref="recipeForm" v-model="validates" lazy-validation>
+  <div>
     <v-card-text class="pt-3">
       <v-row dense>
         <v-col cols="12">
@@ -31,8 +31,8 @@
           :prepend-icon="mdiCamera"
         />
         <div class="img-area">
-          <v-img v-if="localValue.img_url"
-            :src="require(localValue.img_url)"
+          <img v-if="localValue.img_url"
+            :src="localValue.img_url"
             height="40"
             width="200"
             contain
@@ -55,24 +55,14 @@
         </v-col>
       </v-row>
     </v-card-text>
-    <v-card-actions>
-      <v-spacer />
-      <!-- Add save canel button here -->
-    </v-card-actions>
-  </v-form>
+  </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, PropType, Ref, ref, watch } from '@nuxtjs/composition-api'
-import { cloneDeep } from 'lodash-es'
-import isEmpty from 'validator/es/lib/isEmpty'
+import { defineComponent, PropType, ref } from '@nuxtjs/composition-api'
 import { usePropWatch } from '~/composables/props'
 import Recipe, { Category } from '~/models/recipe'
 import { mdiCamera } from '@mdi/js'
-
-interface Validatable {
-  validate: () => boolean
-}
 
 export default defineComponent({
   name: 'RecipeForm',
@@ -86,8 +76,6 @@ export default defineComponent({
   setup (props, { emit }) {
     const propWatch = usePropWatch(props)
     const localValue = propWatch('recipe')
-    const validates = ref(true)
-    const recipeForm = ref<Validatable | null>(null)
 
     const titleDuplicated = ref(false) // TODO: Implement a function to check if the same name exists
 
@@ -102,22 +90,12 @@ export default defineComponent({
 
     const categoryItems = Object.values(Category)
 
-    const onSave = () => {
-      if (recipeForm.value !== null && recipeForm.value.validate()) {
-        const data = cloneDeep(localValue.value)
-        console.log(localValue.value)
-        emit('save', data)
-      }
-    }
-
     return {
       mdiCamera,
       localValue,
-      validates,
       titleDuplicated,
       validation,
-      categoryItems,
-      onSave
+      categoryItems
     }
   }
 })

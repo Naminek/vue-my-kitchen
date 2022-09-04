@@ -1,18 +1,23 @@
 import Vuetify from 'vuetify'
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import RecipeForm from '.'
+import EditRecipeDialog from '.'
 
 const localVue = createLocalVue()
 
-describe('RecipeForm', () => {
+describe('EditRecipeDialog', () => {
+  const defaultProps = {
+    value: true
+  }
+
   beforeEach(() => {
     jest.resetAllMocks()
   })
 
   function mountFunc (options = {}) {
-    return shallowMount(RecipeForm, {
+    return shallowMount(EditRecipeDialog, {
       localVue,
       vuetify: new Vuetify(),
+      propsData: defaultProps,
       ...options
     })
   }

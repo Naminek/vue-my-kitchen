@@ -1,16 +1,16 @@
 import Vuetify from 'vuetify'
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import RecipeForm from '.'
+import CreateNewButton from '.'
 
 const localVue = createLocalVue()
 
-describe('RecipeForm', () => {
+describe('CreateNewButton', () => {
   beforeEach(() => {
     jest.resetAllMocks()
   })
 
   function mountFunc (options = {}) {
-    return shallowMount(RecipeForm, {
+    return shallowMount(CreateNewButton, {
       localVue,
       vuetify: new Vuetify(),
       ...options
