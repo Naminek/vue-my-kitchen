@@ -24,6 +24,7 @@
     "vue": "^2.6.12",
     "vue-fragment": "^1.5.2",
     "vue-server-renderer": "^2.6.12",
+    "vue-smooth-reflow": "^0.1.12",
     "vue-template-compiler": "^2.6.12",
     "vuex": "^3.6.2",
     "vuex-composition-helpers": "^1.0.23",
