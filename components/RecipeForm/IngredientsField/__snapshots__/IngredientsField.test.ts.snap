@@ -5,8 +5,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
   <div>
     <div>
       <div class="row row--dense">
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-11">
+          <div class="v-input v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-4" class="v-input__slot" role="combobox">
                 <fieldset aria-hidden="true">
@@ -30,8 +30,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-7">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
             <div class="v-input__control">
               <div class="v-input__slot">
                 <fieldset aria-hidden="true">
@@ -47,8 +47,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-1 col-4" style="min-width: 73px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-8" class="v-input__slot" role="button">
                 <fieldset aria-hidden="true">
@@ -59,7 +59,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                 <div class="v-select__slot">
                   <label class="v-label v-label--active theme--light" for="input-8" style="left: 0px; position: absolute;">Group</label>
                   <div class="v-select__selections">
-                    <div class="v-select__selection v-select__selection--comma">0</div>
+                    <div class="v-select__selection v-select__selection--comma">4</div>
                     <input aria-readonly="false" autocomplete="off" id="input-8" readonly="readonly" type="text">
                   </div>
                   <div class="v-input__append-inner">
@@ -67,7 +67,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                       <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
                     </div>
                   </div>
-                  <input type="hidden" value="0">
+                  <input type="hidden" value="4">
                 </div>
                 <div class="v-menu">
                 </div>
@@ -79,8 +79,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
     </div>
     <div>
       <div class="row row--dense">
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-11">
+          <div class="v-input v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-12" class="v-input__slot" role="combobox">
                 <fieldset aria-hidden="true">
@@ -104,8 +104,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-7">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
             <div class="v-input__control">
               <div class="v-input__slot">
                 <fieldset aria-hidden="true">
@@ -121,8 +121,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-1 col-4" style="min-width: 73px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-16" class="v-input__slot" role="button">
                 <fieldset aria-hidden="true">
@@ -153,8 +153,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
     </div>
     <div>
       <div class="row row--dense">
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-11">
+          <div class="v-input v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-20" class="v-input__slot" role="combobox">
                 <fieldset aria-hidden="true">
@@ -178,8 +178,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-7">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
             <div class="v-input__control">
               <div class="v-input__slot">
                 <fieldset aria-hidden="true">
@@ -195,8 +195,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-1 col-4" style="min-width: 73px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-24" class="v-input__slot" role="button">
                 <fieldset aria-hidden="true">
@@ -207,7 +207,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                 <div class="v-select__slot">
                   <label class="v-label v-label--active theme--light" for="input-24" style="left: 0px; position: absolute;">Group</label>
                   <div class="v-select__selections">
-                    <div class="v-select__selection v-select__selection--comma">5</div>
+                    <div class="v-select__selection v-select__selection--comma">0</div>
                     <input aria-readonly="false" autocomplete="off" id="input-24" readonly="readonly" type="text">
                   </div>
                   <div class="v-input__append-inner">
@@ -215,7 +215,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                       <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
                     </div>
                   </div>
-                  <input type="hidden" value="5">
+                  <input type="hidden" value="0">
                 </div>
                 <div class="v-menu">
                 </div>
@@ -227,8 +227,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
     </div>
     <div>
       <div class="row row--dense">
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-11">
+          <div class="v-input v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-28" class="v-input__slot" role="combobox">
                 <fieldset aria-hidden="true">
@@ -252,8 +252,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-7">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
             <div class="v-input__control">
               <div class="v-input__slot">
                 <fieldset aria-hidden="true">
@@ -269,8 +269,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-1 col-4" style="min-width: 73px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-32" class="v-input__slot" role="button">
                 <fieldset aria-hidden="true">
@@ -281,7 +281,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                 <div class="v-select__slot">
                   <label class="v-label v-label--active theme--light" for="input-32" style="left: 0px; position: absolute;">Group</label>
                   <div class="v-select__selections">
-                    <div class="v-select__selection v-select__selection--comma">3</div>
+                    <div class="v-select__selection v-select__selection--comma">1</div>
                     <input aria-readonly="false" autocomplete="off" id="input-32" readonly="readonly" type="text">
                   </div>
                   <div class="v-input__append-inner">
@@ -289,7 +289,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                       <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
                     </div>
                   </div>
-                  <input type="hidden" value="3">
+                  <input type="hidden" value="1">
                 </div>
                 <div class="v-menu">
                 </div>
@@ -301,8 +301,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
     </div>
     <div>
       <div class="row row--dense">
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-11">
+          <div class="v-input v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-36" class="v-input__slot" role="combobox">
                 <fieldset aria-hidden="true">
@@ -326,8 +326,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-4 col-md-5 col-7">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
             <div class="v-input__control">
               <div class="v-input__slot">
                 <fieldset aria-hidden="true">
@@ -343,8 +343,8 @@ exports[`IngredientsField should match its snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
-          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-1 col-4" style="min-width: 73px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
             <div class="v-input__control">
               <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-40" class="v-input__slot" role="button">
                 <fieldset aria-hidden="true">
@@ -355,7 +355,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                 <div class="v-select__slot">
                   <label class="v-label v-label--active theme--light" for="input-40" style="left: 0px; position: absolute;">Group</label>
                   <div class="v-select__selections">
-                    <div class="v-select__selection v-select__selection--comma">3</div>
+                    <div class="v-select__selection v-select__selection--comma">2</div>
                     <input aria-readonly="false" autocomplete="off" id="input-40" readonly="readonly" type="text">
                   </div>
                   <div class="v-input__append-inner">
@@ -363,7 +363,7 @@ exports[`IngredientsField should match its snapshot 1`] = `
                       <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
                     </div>
                   </div>
-                  <input type="hidden" value="3">
+                  <input type="hidden" value="2">
                 </div>
                 <div class="v-menu">
                 </div>

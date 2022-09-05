@@ -3,44 +3,44 @@
     <v-row dense>
       <v-col
         class="flex-shrink-1 flex-grow-0"
-        cols="12"
-        sm="6"
-        md="4"
-        lg="1"
-        style="min-width:100px"
+        cols="11"
+        sm="4"
+        md="5"
       >
         <v-autocomplete
           :value="localItem.ingredient_id"
           label="Item"
           outlined
+          dense
           hide-details="auto"
         />
       </v-col>
       <v-col
         class="flex-shrink-1 flex-grow-0"
-        cols="1"
-        style="min-width:100px"
+        cols="7"
+        sm="4"
+        md="5"
       >
         <v-text-field
           :value="localItem.amount"
           label="Amount"
           outlined
+          dense
           hide-details="auto"
         />
       </v-col>
       <v-col
         class="flex-shrink-1 flex-grow-0"
-        cols="12"
-        sm="6"
-        md="4"
-        lg="1"
-        style="min-width: 100px"
+        cols="4"
+        sm="1"
+        style="min-width: 73px"
       >
         <v-select
           :value="localItem.group"
           label="Group"
           :items="groupItems"
           outlined
+          dense
           hide-details="auto"
         />
       </v-col>
