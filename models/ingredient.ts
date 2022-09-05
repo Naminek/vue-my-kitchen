@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import { Model } from '@vuex-orm/core'
+import Recipe from './recipe'
 
 export enum Season {
   SEASON_UNSPECIFIED,
@@ -8,15 +9,6 @@ export enum Season {
   SEASON_SUMMER,
   SEASON_AUTUMN,
   SEASON_WINTER,
-}
-
-export enum Group {
-  GROUP_UNSPECIFIED,
-  GROUP_1,
-  GROUP_2,
-  GROUP_3,
-  GROUP_4,
-  GROUP_5,
 }
 
 export default class Ingredient extends Model {
@@ -29,12 +21,12 @@ export default class Ingredient extends Model {
       id: this.number(0),
       name: this.attr(''),
       season: this.number(''),
-      group: this.number(0)
+      recipes: this.hasMany(Recipe, 'recipe_id')
     }
   }
 
   id!: number
   name!: string
   season?: Season
-  group?: Group
+  recipes?: Recipe[]
 }

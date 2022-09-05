@@ -40,7 +40,7 @@
     </v-toolbar-title>
     <v-spacer />
     <CreateNewButton
-      @clicked-recipe="dialogs.recipe = true"
+      @clicked-recipe="createNewRecipe"
       @clicked-daily-log="dialogs.dailyLog = true"
     />
 
@@ -64,7 +64,7 @@
       </v-tabs>
     </template>
 
-    <EditRecipeDialog v-model="dialogs.recipe" />
+    <EditRecipeDialog v-model="dialogs.recipe" :recipe="currentRecipe" />
 
   </v-toolbar>
 </template>
@@ -75,6 +75,8 @@ import { mdiMenu, mdiPlus } from '@mdi/js'
 import { Route } from 'vue-router'
 import CreateNewButton from '~/components/CreateNewButton/'
 import EditRecipeDialog from '~/components/EditRecipeDialog'
+import Recipe from '~/models/recipe'
+import { newIngredientItem } from '~/composables/type'
 
 export default defineComponent({
   name: "AppBar",
@@ -82,9 +84,8 @@ export default defineComponent({
   setup() {
       const route = useRoute()
       const currentTab = ref<string>('/')
-      watch(() => route.value, (value: Route) => {
-          currentTab.value = value.path.split("/")[1]
-      });
+      const currentRecipe = ref<Recipe | undefined>(undefined)
+
       const tabs = ref([
           {
               label: "Home",
@@ -102,7 +103,8 @@ export default defineComponent({
               label: "Daily Logs",
               path: "/daily-logs"
           }
-      ]);
+      ])
+
       const addMenu = ref([
           { label: "Recipe" },
           { label: "Daily log" }
@@ -112,13 +114,29 @@ export default defineComponent({
         recipe: false,
         dailyLog: false
       })
+
+
+      watch(() => route.value, (value: Route) => {
+          currentTab.value = value.path.split("/")[1]
+      })
+
+
+      const createNewRecipe = () => {
+        currentRecipe.value = new Recipe({
+          ingredients: [newIngredientItem()]
+        })
+        dialogs.recipe = true;
+      }
+
       return {
         tabs,
         mdiMenu,
         mdiPlus,
         currentTab,
         addMenu,
-        dialogs
+        dialogs,
+        currentRecipe,
+        createNewRecipe
       }
   }
 })

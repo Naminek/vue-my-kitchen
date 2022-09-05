@@ -1,0 +1,393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IngredientsField should match its snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <div class="row row--dense">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-4" class="v-input__slot" role="combobox">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label theme--light" for="input-4" style="left: 0px; position: absolute;">Item</label>
+                  <input autocomplete="off" id="input-4" type="text">
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="1">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+            <div class="v-input__control">
+              <div class="v-input__slot">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-text-field__slot">
+                  <label class="v-label v-label--active theme--light" for="input-7" style="left: 0px; position: absolute;">Amount</label>
+                  <input id="input-7" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-8" class="v-input__slot" role="button">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label v-label--active theme--light" for="input-8" style="left: 0px; position: absolute;">Group</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection v-select__selection--comma">0</div>
+                    <input aria-readonly="false" autocomplete="off" id="input-8" readonly="readonly" type="text">
+                  </div>
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="0">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row row--dense">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-12" class="v-input__slot" role="combobox">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label theme--light" for="input-12" style="left: 0px; position: absolute;">Item</label>
+                  <input autocomplete="off" id="input-12" type="text">
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="2">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+            <div class="v-input__control">
+              <div class="v-input__slot">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-text-field__slot">
+                  <label class="v-label v-label--active theme--light" for="input-15" style="left: 0px; position: absolute;">Amount</label>
+                  <input id="input-15" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-16" class="v-input__slot" role="button">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label v-label--active theme--light" for="input-16" style="left: 0px; position: absolute;">Group</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection v-select__selection--comma">3</div>
+                    <input aria-readonly="false" autocomplete="off" id="input-16" readonly="readonly" type="text">
+                  </div>
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="3">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row row--dense">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-20" class="v-input__slot" role="combobox">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label theme--light" for="input-20" style="left: 0px; position: absolute;">Item</label>
+                  <input autocomplete="off" id="input-20" type="text">
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="3">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+            <div class="v-input__control">
+              <div class="v-input__slot">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-text-field__slot">
+                  <label class="v-label v-label--active theme--light" for="input-23" style="left: 0px; position: absolute;">Amount</label>
+                  <input id="input-23" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-24" class="v-input__slot" role="button">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label v-label--active theme--light" for="input-24" style="left: 0px; position: absolute;">Group</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection v-select__selection--comma">5</div>
+                    <input aria-readonly="false" autocomplete="off" id="input-24" readonly="readonly" type="text">
+                  </div>
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="5">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row row--dense">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-28" class="v-input__slot" role="combobox">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label theme--light" for="input-28" style="left: 0px; position: absolute;">Item</label>
+                  <input autocomplete="off" id="input-28" type="text">
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="4">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+            <div class="v-input__control">
+              <div class="v-input__slot">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-text-field__slot">
+                  <label class="v-label v-label--active theme--light" for="input-31" style="left: 0px; position: absolute;">Amount</label>
+                  <input id="input-31" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-32" class="v-input__slot" role="button">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label v-label--active theme--light" for="input-32" style="left: 0px; position: absolute;">Group</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection v-select__selection--comma">3</div>
+                    <input aria-readonly="false" autocomplete="off" id="input-32" readonly="readonly" type="text">
+                  </div>
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="3">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row row--dense">
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-36" class="v-input__slot" role="combobox">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label theme--light" for="input-36" style="left: 0px; position: absolute;">Item</label>
+                  <input autocomplete="off" id="input-36" type="text">
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="5">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+            <div class="v-input__control">
+              <div class="v-input__slot">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-text-field__slot">
+                  <label class="v-label v-label--active theme--light" for="input-39" style="left: 0px; position: absolute;">Amount</label>
+                  <input id="input-39" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+          <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+            <div class="v-input__control">
+              <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-40" class="v-input__slot" role="button">
+                <fieldset aria-hidden="true">
+                  <legend style="width: 0px;">
+                    <span class="notranslate">​</span>
+                  </legend>
+                </fieldset>
+                <div class="v-select__slot">
+                  <label class="v-label v-label--active theme--light" for="input-40" style="left: 0px; position: absolute;">Group</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection v-select__selection--comma">3</div>
+                    <input aria-readonly="false" autocomplete="off" id="input-40" readonly="readonly" type="text">
+                  </div>
+                  <div class="v-input__append-inner">
+                    <div class="v-input__icon v-input__icon--append">
+                      <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                    </div>
+                  </div>
+                  <input type="hidden" value="3">
+                </div>
+                <div class="v-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+    <div class="col col-auto">
+      <button class="v-btn v-btn--has-bg theme--light v-size--default blue-grey lighten-5" type="button">
+        <span class="v-btn__content">
+          <span aria-hidden="true" class="v-icon notranslate v-icon--left theme--light">
+            <svg aria-hidden="true" class="v-icon__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+            </svg>
+          </span>
+          <span>Add item</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

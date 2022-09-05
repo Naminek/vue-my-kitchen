@@ -61,30 +61,29 @@ import {
 import { mdiCancel, mdiCheck, mdiClose } from '@mdi/js'
 import Recipe from '~/models/recipe'
 import RecipeForm from '~/components/RecipeForm'
-import { usePropWatch } from '~/composables/props'
 import { cloneDeep } from 'lodash'
+import { newIngredientItem } from '~/composables/type'
 
 interface Validatable {
   validate: () => boolean
 }
 
 export default defineComponent({
-  name: 'InvoiceDialog',
+  name: 'EditRecipeDialog',
   components: {
     RecipeForm
   },
   props: {
     value: {
       type: Boolean,
-      required: true
+      default: () => new Recipe()
     },
     recipe: {
       type: Object as PropType<Recipe>,
-      default: () => new Recipe()
+      default: undefined
     }
   },
   setup (props, { emit }) {
-    const propWatch = usePropWatch(props)
     const recipeBuffer = ref<Recipe>()
     const form = ref<Validatable | null>(null)
     const validates = ref(true)
@@ -97,7 +96,9 @@ export default defineComponent({
           if (recipe) {
             recipeBuffer.value = new Recipe(recipe)
           } else {
-            recipeBuffer.value = new Recipe()
+            recipeBuffer.value = new Recipe({
+              ingredients: [newIngredientItem()]
+            })
           }
         }
       },

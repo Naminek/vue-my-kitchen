@@ -1,7 +1,6 @@
 /* eslint-disable camelcase */
 import { Model } from '@vuex-orm/core'
-import Ingredient from './ingredient'
-// import { Config } from '@vuex-orm/plugin-axios'
+import IngredientItem from '~/composables/type'
 
 export enum Category {
   CATEGORY_MEAT = 'Meat',
@@ -29,7 +28,7 @@ export default class Recipe extends Model {
       updated_at: this.attr(''),
       title: this.attr(''),
       ingredient_ids: this.attr(null),
-      ingredients: this.hasManyBy(Ingredient, 'ingredient_ids'),
+      ingredients: this.attr([]),
       categories: this.attr([]),
       img_url: this.attr(''),
       steps: this.attr([]),
@@ -44,7 +43,7 @@ export default class Recipe extends Model {
   updated_at!: string
   title!: string
   ingredient_ids!: number[]
-  ingredients!: Ingredient[]
+  ingredients!: IngredientItem[]
   categories!: Category[]
   img_url?: string
   steps!: Step[]

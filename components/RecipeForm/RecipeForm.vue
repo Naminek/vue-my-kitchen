@@ -11,23 +11,24 @@
             :rules="validation.required"
             :error-messages="titleDuplicated ? 'This title already exists' : ''"
             outlined
+            dense
             data-cy="title"
           />
         </v-col>
         <v-col cols="12">
-          <v-text-field
+          <v-textarea
             v-model="localValue.description"
-            maxlength="100"
             auto-grow
             label="Description"
             outlined
-            data-cy="title"
+            data-cy="description"
           />
         </v-col>
         <v-col cols="12" sm="5" md="4">
           <v-file-input
             label="image"
             outlined
+            dense
             :prepend-icon="mdiCamera"
             @change="onFileChange($event)"
           />
@@ -41,7 +42,10 @@
             <p v-else class="text-center font-italic">No image is selected</p>
           </div>
         </v-col>
-        <v-col cols="12" sm="7" md="8">
+        <v-col cols="12" sm="7" md="8" class="pl-sm-3">
+          <IngredientsField
+            :ingredients="localValue.ingredients"
+          />
         </v-col>
         <v-col cols="12">
           <v-select
@@ -64,10 +68,11 @@ import { defineComponent, PropType, ref } from '@nuxtjs/composition-api'
 import { usePropWatch } from '~/composables/props'
 import Recipe, { Category } from '~/models/recipe'
 import { mdiCamera } from '@mdi/js'
+import IngredientsField from './IngredientsField'
 
 export default defineComponent({
   name: 'RecipeForm',
-  components: { },
+  components: { IngredientsField },
   props: {
     recipe: {
       type: Object as PropType<Recipe>,

@@ -9,6 +9,6 @@ exports[`AppBar should match its snapshot 1`] = `
   </v-toolbar-title-stub>
   <v-spacer-stub tag="div"></v-spacer-stub>
   <createnewbutton-stub></createnewbutton-stub>
-  <editrecipedialog-stub recipe="[object Object]"></editrecipedialog-stub>
+  <editrecipedialog-stub></editrecipedialog-stub>
 </v-toolbar-stub>
 `;

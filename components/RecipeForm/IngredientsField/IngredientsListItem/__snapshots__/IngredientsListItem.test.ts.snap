@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IngredientsListItem should match its snapshot 1`] = `
+<div>
+  <div class="row row--dense">
+    <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+      <div class="v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete">
+        <div class="v-input__control">
+          <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-2" class="v-input__slot" role="combobox">
+            <fieldset aria-hidden="true">
+              <legend style="width: 0px;">
+                <span class="notranslate">​</span>
+              </legend>
+            </fieldset>
+            <div class="v-select__slot">
+              <label class="v-label theme--light" for="input-2" style="left: 0px; position: absolute;">Item</label>
+              <input autocomplete="off" id="input-2" type="text">
+              <div class="v-input__append-inner">
+                <div class="v-input__icon v-input__icon--append">
+                  <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                </div>
+              </div>
+              <input type="hidden" value="1">
+            </div>
+            <div class="v-menu">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-shrink-1 flex-grow-0 col col-1" style="min-width: 100px;">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined">
+        <div class="v-input__control">
+          <div class="v-input__slot">
+            <fieldset aria-hidden="true">
+              <legend style="width: 0px;">
+                <span class="notranslate">​</span>
+              </legend>
+            </fieldset>
+            <div class="v-text-field__slot">
+              <label class="v-label v-label--active theme--light" for="input-5" style="left: 0px; position: absolute;">Amount</label>
+              <input id="input-5" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-shrink-1 flex-grow-0 col-sm-6 col-md-4 col-lg-1 col-12" style="min-width: 100px;">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select">
+        <div class="v-input__control">
+          <div aria-expanded="false" aria-haspopup="listbox" aria-owns="list-6" class="v-input__slot" role="button">
+            <fieldset aria-hidden="true">
+              <legend style="width: 0px;">
+                <span class="notranslate">​</span>
+              </legend>
+            </fieldset>
+            <div class="v-select__slot">
+              <label class="v-label v-label--active theme--light" for="input-6" style="left: 0px; position: absolute;">Group</label>
+              <div class="v-select__selections">
+                <div class="v-select__selection v-select__selection--comma">5</div>
+                <input aria-readonly="false" autocomplete="off" id="input-6" readonly="readonly" type="text">
+              </div>
+              <div class="v-input__append-inner">
+                <div class="v-input__icon v-input__icon--append">
+                  <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i>
+                </div>
+              </div>
+              <input type="hidden" value="5">
+            </div>
+            <div class="v-menu">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

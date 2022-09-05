@@ -1,18 +1,25 @@
+import { getFixedIngredientItems } from './../../../test/fakes/ingredientitem';
 import Vuetify from 'vuetify'
 import { createLocalVue, mount } from '@vue/test-utils'
-import RecipeForm from '.'
+import IngredientsField from '.'
 
 const localVue = createLocalVue()
+const ingredients = getFixedIngredientItems()
 
-describe('RecipeForm', () => {
+describe('IngredientsField', () => {
+  const defaultProps = {
+    ingredients
+  }
+
   beforeEach(() => {
     jest.resetAllMocks()
   })
 
   function mountFunc (options = {}) {
-    return mount(RecipeForm, {
+    return mount(IngredientsField, {
       localVue,
       vuetify: new Vuetify(),
+      propsData: defaultProps,
       ...options
     })
   }
